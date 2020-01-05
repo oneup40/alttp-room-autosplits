@@ -37,10 +37,10 @@ Troubleshooting
 * The Auto Splitter component spams modal dialogs as soon as I add
 it, saying that an empty config file name is not allowed.
 
-** You'll have to fight the Auto Splitter component to get the config
-file specified. Keep spamming the actions you need to do, hitting OK
-to dismiss the dialog every time it appears.  Holding down Enter
-briefly may also help.
+    * You'll have to fight the Auto Splitter component to get the config
+    file specified. Keep spamming the actions you need to do, hitting OK
+    to dismiss the dialog every time it appears.  Holding down Enter
+    briefly may also help.
 
 Links
 -----
