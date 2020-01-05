@@ -1,0 +1,34 @@
+{
+  "game": "The Legend of Zelda: A link to the past",
+  "autostart": {
+    "active": "1",
+    "address": "0x10",
+    "value": "0x05",
+    "type": "eq"
+  },
+  "categories": [
+    {
+      "name": "Any% NMG",
+      "splits": [
+        "-Link's House",
+        "{Hyrule Castle} Done"
+      ]
+    }
+  ],
+  
+  "definitions": [
+    {
+      "name": "-Link's House",
+      "address": "0x040A",
+      "value": "0x2C",
+      "type": "eq"
+    },
+    
+    {
+      "name": "{Hyrule Castle} Done",
+      "address": "0x040A",
+      "value": "0x1B",
+      "type": "eq"
+    }
+  ]
+}
