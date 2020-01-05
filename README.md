@@ -42,6 +42,19 @@ it, saying that an empty config file name is not allowed.
     to dismiss the dialog every time it appears.  Holding down Enter
     briefly may also help.
 
+Technical Details
+-----------------
+
+These splits watch the value of 5 different memory addresses:
+
+* 0xA0 - current underworld room
+* 0xA9 and 0xAA - current quadrant of underworld room (needed for
+multi-room supertiles)
+* 0x040A - current overworld area
+* 0x0AA4 - sprite graphics index (used to detect overworld vs.
+underworld)
+
+
 Links
 -----
 
