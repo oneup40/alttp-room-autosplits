@@ -16,31 +16,31 @@
         "-Uncle",
         "-Passage Exit",
         "-Courtyard",
-        "-Castle Lobby 1st",
-        "-SW Room 1st",
-        "-West Guard Hallway 1st",
-        "-Statue Hallway 1st",
-        "-1st Key Guard 1st",
+        "-Castle Lobby - 1",
+        "-SW Room - 1",
+        "-West Guard Hallway - 1",
+        "-Statue Hallway - 1",
+        "-1st Key Guard - 1",
         "-B1 Pit 1 Lower",
         "-B1 Pit 2 Lower",
-        "-Stealth Room 1st",
-        "-Green Guard 1st",
+        "-Stealth Room - 1",
+        "-Green Guard - 1",
         "-Boomerang Guard",
-        "-Green Guard 2nd",
-        "-Stairs to B2 1st",
-        "-B2 1st",
+        "-Green Guard - 2",
+        "-Stairs to B2 - 1",
+        "-B2 - 1",
         "-Ball N' Chain",
-        "-B2 2nd",
-        "-Stairs to B2 2nd",
-        "-Green Guard 3rd",
-        "-Stealth Room 2nd",
+        "-B2 - 2",
+        "-Stairs to B2 - 2",
+        "-Green Guard - 3",
+        "-Stealth Room - 2",
         "-B1 Pit 2 Upper",
         "-B1 Pit 1 Upper",
-        "-1st Key Guard 2nd",
-        "-Statue Hallway 2nd",
-        "-West Guard Hallway 2nd",
-        "-SW Room 2nd",
-        "-Castle Lobby 2nd",
+        "-1st Key Guard - 2",
+        "-Statue Hallway - 2",
+        "-West Guard Hallway - 2",
+        "-SW Room - 2",
+        "-Castle Lobby - 2",
         "-Throne Room",
         "-Sewer Passage",
         "-Snake Room",
@@ -51,7 +51,41 @@
         "-Rat Hallway",
         "-Behind Sanctuary 1",
         "-Behind Sanctuary 2",
-        "{Hyrule Castle} Sanctuary"
+        "{Hyrule Castle} Sanctuary",
+
+        "-Outside Sanctuary",
+        "-Graveyard",
+        "-East Path",
+        "-Wooden Bridge",
+        "-Octorok Field",
+        "-Guard Bridge",
+        "-East Fairy Cave",
+        "-Outside Eastern",
+        "-Eastern Entrance",
+        "-Three Popos",
+        "-Cannonballs Lower",
+        "-Big Chest Upper",
+        "-West Wing Upper",
+        "-Stalfos Spawn",
+        "-Compass Chest",
+        "-West Wing Lower - 1",
+        "-Big Chest Lower - 1",
+        "-East Wing",
+        "-Dark Anti-Fairy - 1",
+        "-Dark Pot Key",
+        "-Dark Anti-Fairy - 2",
+        "-Cannonballs Upper",
+        "-Big Key Chest",
+        "-West Wing Lower - 2",
+        "-Big Chest Lower - 2",
+        "-Eyegore Key",
+        "-Anti-Fairy Pots",
+        "-Eyegore Floor Switch",
+        "-Cannonball Switch",
+        "-Zeldagamer Room",
+        "-Double Red Eyegores",
+        "-Armos Knights",
+        "{Eastern Palace} EP Cutscene"
       ]
     }
   ],
@@ -61,14 +95,24 @@
       "name": "-Link's House",
       "address": "0x040A",
       "value": "0x2C",
-      "type": "eq"
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
     },
 	
     {
       "name": "-Outside Link's House",
       "address": "0x040A",
       "value": "0x1B",
-      "type": "eq"
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
     },
 
     {
@@ -85,6 +129,11 @@
         {
           "address": "0xAA",
           "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
           "type": "eq"
         }
       ]
@@ -104,6 +153,11 @@
         {
           "address": "0xAA",
           "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
           "type": "eq"
         }
       ]
@@ -146,7 +200,7 @@
     },
 
     {
-      "name": "-Castle Lobby 1st",
+      "name": "-Castle Lobby - 1",
       "address": "0xA0",
       "value": "0x60",
       "type": "eq",
@@ -170,7 +224,7 @@
     },	
 
     {
-      "name": "-SW Room 1st",
+      "name": "-SW Room - 1",
       "address": "0xA0",
       "value": "0x50",
       "type": "eq",
@@ -194,7 +248,7 @@
     },
 
     {
-      "name": "-West Guard Hallway 1st",
+      "name": "-West Guard Hallway - 1",
       "address": "0xA0",
       "value": "0x01",
       "type": "eq",
@@ -218,7 +272,7 @@
     },	
 
     {
-      "name": "-Statue Hallway 1st",
+      "name": "-Statue Hallway - 1",
       "address": "0xA0",
       "value": "0x72",
       "type": "eq",
@@ -242,7 +296,7 @@
     },	
 
     {
-      "name": "-1st Key Guard 1st",
+      "name": "-1st Key Guard - 1",
       "address": "0xA0",
       "value": "0x72",
       "type": "eq",
@@ -314,7 +368,7 @@
     },
 
     {
-      "name": "-Stealth Room 1st",
+      "name": "-Stealth Room - 1",
       "address": "0xA0",
       "value": "0x71",
       "type": "eq",
@@ -338,7 +392,7 @@
     },	
 
     {
-      "name": "-Green Guard 1st",
+      "name": "-Green Guard - 1",
       "address": "0xA0",
       "value": "0x71",
       "type": "eq",
@@ -386,7 +440,7 @@
     },	
 
     {
-      "name": "-Green Guard 2nd",
+      "name": "-Green Guard - 2",
       "address": "0xA0",
       "value": "0x71",
       "type": "eq",
@@ -410,7 +464,7 @@
     },	
 
     {
-      "name": "-Stairs to B2 1st",
+      "name": "-Stairs to B2 - 1",
       "address": "0xA0",
       "value": "0x70",
       "type": "eq",
@@ -434,7 +488,7 @@
     },	
 
     {
-      "name": "-B2 1st",
+      "name": "-B2 - 1",
       "address": "0xA0",
       "value": "0x80",
       "type": "eq",
@@ -482,7 +536,7 @@
     },	
 
     {
-      "name": "-B2 2nd",
+      "name": "-B2 - 2",
       "address": "0xA0",
       "value": "0x71",
       "type": "eq",
@@ -506,7 +560,7 @@
     },	
 
     {
-      "name": "-Stairs to B2 2nd",
+      "name": "-Stairs to B2 - 2",
       "address": "0xA0",
       "value": "0x71",
       "type": "eq",
@@ -530,7 +584,7 @@
     },
 
     {
-      "name": "-Green Guard 3rd",
+      "name": "-Green Guard - 3",
       "address": "0xA0",
       "value": "0x81",
       "type": "eq",
@@ -554,7 +608,7 @@
     },	
 
     {
-      "name": "-Stealth Room 2nd",
+      "name": "-Stealth Room - 2",
       "address": "0xA0",
       "value": "0x82",
       "type": "eq",
@@ -626,7 +680,7 @@
     },	
 
     {
-      "name": "-1st Key Guard 2nd",
+      "name": "-1st Key Guard - 2",
       "address": "0xA0",
       "value": "0x01",
       "type": "eq",
@@ -650,7 +704,7 @@
     },	
 
     {
-      "name": "-Statue Hallway 2nd",
+      "name": "-Statue Hallway - 2",
       "address": "0xA0",
       "value": "0x50",
       "type": "eq",
@@ -674,7 +728,7 @@
     },
 
     {
-      "name": "-West Guard Hallway 2nd",
+      "name": "-West Guard Hallway - 2",
       "address": "0xA0",
       "value": "0x60",
       "type": "eq",
@@ -698,7 +752,7 @@
     },	
 
     {
-      "name": "-SW Room 2nd",
+      "name": "-SW Room - 2",
       "address": "0xA0",
       "value": "0x61",
       "type": "eq",
@@ -722,7 +776,7 @@
     },
 
     {
-      "name": "-Castle Lobby 2nd",
+      "name": "-Castle Lobby - 2",
       "address": "0xA0",
       "value": "0x51",
       "type": "eq",
@@ -997,6 +1051,684 @@
           "type": "eq"
         }
       ]
+    },
+
+
+
+
+
+    {
+      "name": "-Outside Sanctuary",
+      "address": "0x040A",
+      "value": "0x14",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    }, 
+
+    {
+      "name": "-Graveyard",
+      "address": "0x040A",
+      "value": "0x15",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    },    
+
+    {
+      "name": "-East Path",
+      "address": "0x040A",
+      "value": "0x1D",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    },    
+
+    {
+      "name": "-Wooden Bridge",
+      "address": "0x040A",
+      "value": "0x25",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    },  
+
+    {
+      "name": "-Octorok Field",
+      "address": "0x040A",
+      "value": "0x2D",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    }, 
+
+    {
+      "name": "-Guard Bridge",
+      "address": "0x040A",
+      "value": "0x2E",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    },  
+
+    {
+      "name": "-East Fairy Cave",
+      "address": "0x040A",
+      "value": "0x1E",
+      "type": "eq",
+      "next": [{
+        "address": "0x0AA4",
+        "value": "0x01",
+        "type": "eq"
+      }]
+    }, 
+
+    {
+      "name": "-Outside Eastern",
+      "address": "0xA0",
+      "value": "0xC9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    },    
+
+    {
+      "name": "-Eastern Entrance",
+      "address": "0xA0",
+      "value": "0xC9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Three Popos",
+      "address": "0xA0",
+      "value": "0xB9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Cannonballs Lower",
+      "address": "0xA0",
+      "value": "0xA9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Big Chest Upper",
+      "address": "0xA0",
+      "value": "0xA8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-West Wing Upper",
+      "address": "0xA0",
+      "value": "0xA8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Stalfos Spawn",
+      "address": "0xA0",
+      "value": "0xA8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Compass Chest",
+      "address": "0xA0",
+      "value": "0xA8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-West Wing Lower - 1",
+      "address": "0xA0",
+      "value": "0xA9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Big Chest Lower - 1",
+      "address": "0xA0",
+      "value": "0xAA",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-East Wing",
+      "address": "0xA0",
+      "value": "0xBA",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Dark Anti-Fairy - 1",
+      "address": "0xA0",
+      "value": "0xBA",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Dark Pot Key",
+      "address": "0xA0",
+      "value": "0xBA",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Dark Anti-Fairy - 2",
+      "address": "0xA0",
+      "value": "0xB9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Cannonballs Upper",
+      "address": "0xA0",
+      "value": "0xB8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Big Key Chest",
+      "address": "0xA0",
+      "value": "0xA8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-West Wing Lower - 2",
+      "address": "0xA0",
+      "value": "0xA9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Big Chest Lower - 2",
+      "address": "0xA0",
+      "value": "0x99",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Eyegore Key",
+      "address": "0xA0",
+      "value": "0xDA",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Anti-Fairy Pots",
+      "address": "0xA0",
+      "value": "0xD9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Eyegore Floor Switch",
+      "address": "0xA0",
+      "value": "0xD9",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Cannonball Switch",
+      "address": "0xA0",
+      "value": "0xD8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Zeldagamer Room",
+      "address": "0xA0",
+      "value": "0xD8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x00",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Double Red Eyegores",
+      "address": "0xA0",
+      "value": "0xC8",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0xA9",
+          "value": "0x01",
+          "type": "eq"
+        },
+        {
+          "address": "0xAA",
+          "value": "0x02",
+          "type": "eq"
+        },
+        {
+          "address": "0x0AA4",
+          "value": "0x0A",
+          "type": "eq"
+        }
+      ]
+    }, 
+
+    {
+      "name": "-Armos Knights",
+      "address": "0x0100",
+      "value": "0x24",
+      "type": "eq"
+    }, 
+
+    {
+      "name": "{Eastern Palace} EP Cutscene",
+      "address": "0x0100",
+      "value": "0x96",
+      "type": "eq"
     }
   ]
 }
